@@ -1,0 +1,3 @@
+from math import asin,sin,sqrt,atan,degrees,ceil
+AB,BC = int(input()), int(input())
+print(round(degrees(atan(AB/BC))),end=u"\u00b0")
