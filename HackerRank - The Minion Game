@@ -1,0 +1,20 @@
+def minion_game(string):
+    Stuart_score = 0
+    Kevin_score = 0
+    length = len(string)
+    for position in range(length):
+        if string[position] in ['A', 'E', 'I', 'O', 'U']:
+            Kevin_score += (length - position)
+        else:
+            Stuart_score += (length - position)
+            
+    if Stuart_score == Kevin_score:
+        print('Draw')
+    elif Stuart_score > Kevin_score:
+        print('Stuart '  + str(Stuart_score))
+    else:
+        print('Kevin ' + str(Kevin_score))
+
+if __name__ == '__main__':
+ s = input()
+ minion_game(s)
