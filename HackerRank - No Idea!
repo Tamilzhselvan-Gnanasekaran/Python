@@ -1,0 +1,15 @@
+n, m = list(input().split())
+array = list(input().split())
+a = set(input().split())
+b = set(input().split())
+
+happy = 0
+
+for num in range(len(array)):
+    if array[num] in a:
+        happy += 1
+    if array[num] in b:
+        happy -= 1
+
+print(happy)
+
